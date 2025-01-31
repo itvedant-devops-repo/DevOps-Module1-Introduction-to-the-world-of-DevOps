@@ -64,3 +64,78 @@ backup/
 ```
 
 
+---
+
+## 🏁 Steps to Complete the Project
+
+### **1️⃣ Setup Linux and Git**
+- Open a terminal and ensure Git is installed:
+  ```bash
+  git --version
+
+Configure Git:
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+```
+
+### 2️⃣ Clone the Repository
+
+Clone this repository to your local machine
+
+```
+git clone https://github.com/your-repo/linux-git-devops-project.git
+```
+
+### 3️⃣ Working with Git
+
+Navigate into the project folder:
+
+```
+cd linux-git-devops-project
+```
+
+Create a new branch:
+
+```
+git checkout -b feature-branch
+```
+
+Add and commit a new change:
+
+```
+echo "New DevOps notes" >> devops_notes.txt
+git add devops_notes.txt
+git commit -m "Updated DevOps notes"
+```
+
+### 4️⃣ Running Linux Scripts
+
+Make scripts executable:
+
+```
+chmod +x scripts/*.sh
+```
+
+Run the system information script:
+
+```
+./scripts/system_info.sh
+```
+
+Run the backup script:
+
+```
+./scripts/backup_script.sh
+```
+
+### 5️⃣ Push Changes to GitHub
+
+Push the new branch to GitHub:
+
+```
+git push origin feature-branch
+```
+
+Open a pull request and merge changes.
