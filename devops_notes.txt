@@ -1,0 +1,4 @@
+# DevOps Notes
+- Git is a distributed version control system.
+- Linux commands are crucial for system administration.
+- Bash scripting automates repetitive tasks.
