@@ -19,120 +19,26 @@ linux-git-devops-project/
 ├── README.md                # Project documentation  
 └── devops_notes.txt         # Sample file for Git versioning 
 
-### 📜 1. scripts/system_info.sh (Linux System Information Script)
-```
-#!/bin/bash
-#Script to display system information
 
-echo "System Information Report"
-echo "-------------------------"
-echo "Hostname: $(hostname)"
-echo "Uptime: $(uptime -p)"
-echo "Current Users: $(who)"
-echo "Disk Usage:"
-df -h
-```
+## 📂 Provided Boilerplate
+- Starter scripts with missing code.
+- Basic project structure.
+- Git repository setup.
 
-### 📜 2. scripts/backup_script.sh (Simple Backup Script)
-```
-#!/bin/bash
-# Script to back up a directory
+## 🔨 Your Task
+✅ Complete the missing sections in the scripts.  
+✅ Improve the backup script with logging and error handling.  
+✅ Add additional notes in `devops_notes.txt`.  
+✅ Commit and push your changes to GitHub.  
 
-SOURCE_DIR="$HOME/Documents"
-BACKUP_DIR="$HOME/backup"
+## 📢 Submission Instructions
+1. Fork this repository.
+2. Complete the missing parts.
+3. Commit your changes.
+4. Push to your GitHub and share the link.
 
-mkdir -p "$BACKUP_DIR"
-cp -r "$SOURCE_DIR" "$BACKUP_DIR"
+🚀 **Happy Learning!**  
 
-echo "Backup completed successfully at $(date)" >> backup.log
-```
-
-### 📜 3. .gitignore (Git Ignore File)
-
-```
-*.log
-backup/
-```
-
-### 📜 4. devops_notes.txt (Sample Notes File for Git Versioning)
-
-```
-# DevOps Notes
-- Git is a distributed version control system.
-- Linux commands are crucial for system administration.
-- Bash scripting automates repetitive tasks.
-```
-
-
----
-
-## 🏁 Steps to Complete the Project
-
-### **1️⃣ Setup Linux and Git**
-- Open a terminal and ensure Git is installed:
-  ```bash
-  git --version
-
-Configure Git:
-
-```
-git config --global user.name "Your Name"
-git config --global user.email "your-email@example.com"
-```
-
-### 2️⃣ Clone the Repository
-
-Clone this repository to your local machine
-
-```
-git clone https://github.com/your-repo/linux-git-devops-project.git
-```
-
-### 3️⃣ Working with Git
-
-Navigate into the project folder:
-
-```
-cd linux-git-devops-project
-```
-
-Create a new branch:
-
-```
-git checkout -b feature-branch
-```
-
-Add and commit a new change:
-
-```
-echo "New DevOps notes" >> devops_notes.txt
-git add devops_notes.txt
-git commit -m "Updated DevOps notes"
-```
-
-### 4️⃣ Running Linux Scripts
-
-Make scripts executable:
-
-```
-chmod +x scripts/*.sh
-```
-
-Run the system information script:
-
-```
-./scripts/system_info.sh
-```
-
-Run the backup script:
-
-```
-./scripts/backup_script.sh
-```
-
-### 5️⃣ Push Changes to GitHub
-
-Push the new branch to GitHub:
 
 ```
 git push origin feature-branch
